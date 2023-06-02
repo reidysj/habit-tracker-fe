@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html,
 body,
 div,
@@ -126,43 +127,57 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+// END RESET
+
+@bhOrange: #ffb100;
+@bhPaleOrange: #fbc252;
+@bhTan: #f0eccf;
+@bhGreen: #a2bb98;
+
 .nav {
   height: 5vh;
 }
+
 .entryBlock {
   height: 80vh;
-  background-color: #ffb100;
+  background-color: @bhOrange;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
+
 .entryBlock > .userInfo {
   height: 60vh;
   width: 25vw;
-  background-color: #f0eccf;
+  background-color: @bhTan;
   align-self: flex-end;
 }
+
 .entryBlock > .logo {
   height: 40vh;
   margin-left: 10vh;
   align-self: flex-end;
 }
+
 .entryBlock > .welcomeMessage {
   margin-top: 15vh;
   align-self: flex-start;
 }
+
 .entryBlock > div > h1 {
   font-size: 6rem;
   color: white;
 }
+
 .entryBlock > div > h2 {
   font-size: 2rem;
   color: white;
 }
+
 .entryBlock > .arrowIcon {
   width: 100%;
   font-size: 5rem;
   align-self: flex-end;
 }
-/*# sourceMappingURL=App.css.map */

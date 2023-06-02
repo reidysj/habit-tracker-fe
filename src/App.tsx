@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import BearTrackLogo from "./Vector.svg";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="nav"></div>
+      <div className="entryBlock">
+        <img src={BearTrackLogo} className="logo" alt="bear" />
+        <div className="welcomeMessage">
+          <h1>BearTrack</h1>
+          <h2>Establish habits. Track the bear.</h2>
+        </div>
+        <div className="userInfo"></div>
+        <ArrowDownwardIcon className="arrowIcon" />
+      </div>
+    </>
   );
 }
 
